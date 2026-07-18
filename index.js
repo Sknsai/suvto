@@ -4,7 +4,7 @@ const bot = mineflayer.createBot({
   host: '148.113.30.96', // CHANGE IP
   port: 7037,             // CHANGE PORT
   username: 'bot2',     // CHANGE THE USERNAME
-  version: '26.2'        // CHANGE THE VERSION IF YOUR SERVER SUPPORTS A DIFFERENT VERSION
+  version: ''        // CHANGE THE VERSION IF YOUR SERVER SUPPORTS A DIFFERENT VERSION
 });
 
 // 1. SAFE LOGIN LOGIC
