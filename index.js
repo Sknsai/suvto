@@ -1,10 +1,10 @@
 const mineflayer = require('mineflayer');
 
 const bot = mineflayer.createBot({
-  host: 'FinalLifeRun.aternos.me', // CHANGE IP
-  port: 62549,             // CHANGE PORT
-  username: 'AFK_Bot',     // CHANGE THE USERNAME
-  version: '1.20.1'        // CHANGE THE VERSION IF YOUR SERVER SUPPORTS A DIFFERENT VERSION
+  host: '148.113.30.96', // CHANGE IP
+  port: 7037,             // CHANGE PORT
+  username: 'bot2',     // CHANGE THE USERNAME
+  version: '26.2'        // CHANGE THE VERSION IF YOUR SERVER SUPPORTS A DIFFERENT VERSION
 });
 
 // 1. SAFE LOGIN LOGIC
@@ -24,10 +24,10 @@ bot.on('spawn', () => {
       if (typeof bot.entity.position.x === 'number') {
         bot.physics.enabled = true;
         console.log('Coordinates synced as numbers. Sending login...');
-        bot.chat('/login MyPassword123'); // CHANGE TO YOUR PASSWORD
-        bot.chat('/register MyPassword123 MyPassword123'); // CHANGE TO THE PASSWORD YOU LIKE
+        bot.chat('/login ilovegay'); // CHANGE TO YOUR PASSWORD
+        bot.chat('/register ilovegay ilovegay'); // CHANGE TO THE PASSWORD YOU LIKE
         setTimeout(() => {
-          bot.chat('/login MyPassword123'); // CHANGE TO YOUR PASSWORD
+          bot.chat('/login ilovegay'); // CHANGE TO YOUR PASSWORD
         }, 10);
         
         startAntiAFK();
